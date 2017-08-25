@@ -1,0 +1,29 @@
+<div class="jumbotron">
+    <div class="container text-center ">
+        <div class="form-signin">
+            <h2 class="form-signin-heading">Find my Cook</h2>
+
+            <small class="text-muted">Sign in</small>
+            <br><br>
+            <p>
+                <a class="btn btn-primary social-login-btn social-facebook" href="/auth/facebook"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-primary social-login-btn social-google" href="/auth/google"><i class="fa fa-google-plus"></i></a>
+            </p>
+
+            <small class="text-muted">Or</small>
+            <br><br>
+
+            <input [(ngModel)]="user.email" id="email" type="email" required class="ember-view ember-text-field form-control login-input"
+                placeholder="Email Address">
+
+            <input [(ngModel)]="user.password" id="password" class="ember-view ember-text-field form-control login-input-pass" placeholder="Password"
+                type="password">
+
+            <span>{{errorMsg}}</span>
+            <button (click)="login()" class="btn btn-lg btn-primary btn-block btn-center" type="submit" data-bindattr-3="3">Sign in</button>
+            <br>
+            <small class="create-account text-muted">Dont have FmC account? <button id="ember363" class="ember-view btn btn-sm btn-default"> Sign Up </button> </small>
+        </div>
+
+    </div>
+</div>
